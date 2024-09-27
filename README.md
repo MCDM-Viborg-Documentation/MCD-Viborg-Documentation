@@ -3,9 +3,5 @@ Authors : WEB Media College Viborg
 Description: Samlet React Documentation & Snippets
 ```
 
-# Documentation
+# Dokumentation
 
-## Prerequsites
-
-
-## Projects
