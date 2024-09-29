@@ -40,7 +40,15 @@ Der er flere og alle er ikke listet her - Tag dem efterhånden som du følger me
 
 ## Kildefiler.
 
-... undervejs.
+1. Server skal vi bruge. (følg video og readme)
+[Server](sources/mcd_web_legekrogen_server.zip)
+
+2. Starter Klient (som du med fordel kan gære til din egen version) 
+[Klient Starter](sources/mcd_legekrogen_tutorial_crud_client_starter.zip) 
+
+2. Klient med CRUD implementeret på Produkter.
+1. [Klient Med Products](sources/mcd_legekrogen_tutorial_crud_client_products.zip) 
+
 
 ## Video Tutorials.
 
