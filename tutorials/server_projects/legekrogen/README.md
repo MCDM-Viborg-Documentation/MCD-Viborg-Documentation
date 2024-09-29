@@ -6,7 +6,9 @@ Live Server     : https://legekrogen-v2.webmcdm.dk
 
 # Functional Prototyping Legekrogen
 
-Dette er en tutorial i at arbejde med et at vores server projekter.
+Dette er en tutorial i at arbejde med et at vores server projekter. Du kan med fordel starte med at hoppe over og se [Video Tutorials](https://vimeo.com/user/59963758/folder/22283699?isPrivate=false) og det vil ikke være dumt at se de første par stykker og først derefter selv begynde at kode og se dem igen.
+
+Derudover anbefaler jeg at du læser dette dokument igennem også. - det er hurtigt overstået :)
 
 **Normalt**:
 1. Du henter en server og installere og fylder databasen med data.
@@ -40,20 +42,19 @@ Der er flere og alle er ikke listet her - Tag dem efterhånden som du følger me
 
 ## Kildefiler.
 
-1. Server skal vi bruge. (følg video og readme)
-[Server](sources/mcd_web_legekrogen_server.zip)
+I mappen "sources", i dette repsositorie, ligger der kildefiler.
 
-2. Starter Klient (som du med fordel kan gære til din egen version) 
-[Klient Starter](sources/mcd_legekrogen_tutorial_crud_client_starter.zip) 
+Start med at hente `mcd_web_legekrogen_server.zip` og `mcd_legekrogen_tutorial_crud_client_starter.zip`.
 
-2. Klient med CRUD implementeret på Produkter.
-1. [Klient Med Products](sources/mcd_legekrogen_tutorial_crud_client_products.zip) 
+**Server**
+`mcd_web_legekrogen_server.zip`
 
+**Starter klient template**
+`mcd_legekrogen_tutorial_crud_client_starter.zip`
+
+**Products implementeret, klient template**
+`mcd_legekrogen_tutorial_crud_client_products.zip`
 
 ## Video Tutorials.
 
-1. Intro til Legekrogen Server Project, men generelt for alle server projects.
-2. Intro til Tutorial React Klienten.
-3. Opstart, Produkter.
-4. Mere Produkter, Reviews og Subscribers og en hook.
-4. Routing og Backoffice.
+[Video Tutorials](https://vimeo.com/user/59963758/folder/22283699?isPrivate=false)
