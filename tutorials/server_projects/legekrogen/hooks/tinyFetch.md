@@ -16,7 +16,7 @@ const useTinyFetch = () => {
         const response = await fetch(url);
         const result = await response.json();
         setData(result.data);
-
+        
 
         return result
     }
