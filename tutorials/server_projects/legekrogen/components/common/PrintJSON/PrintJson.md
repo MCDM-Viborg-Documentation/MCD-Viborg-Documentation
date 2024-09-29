@@ -28,7 +28,18 @@ export default PrintJson;
 `printJson.module.css`
 ```css
 .printJson {
+    overflow: hidden;
     padding: 20px;
-    border : dotted 1px var(--mc-color-green)
+    border : dotted 1px var(--mc-color-green);
+    font-family: 'Consolas';
+    font-size: 1.4rem;
+    width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+    &:hover {
+        background-color: #eee;
+       
+    }
 }
 ```

@@ -27,7 +27,16 @@ Dette er en tutorial i at arbejde med et at vores server projekter.
 Der vil blive brugt komponeter som vi ikke bruger så meget tid på at forklare og vi indsætter dem løbende.
 
 F.eks.
-1. [PrintJSON](./components/printJson.md)
+[PrintJSON](./components/common/PrintJSON/printJson.md)
+[Navigation](./components/common/Navigation/Navigation.md)
+[Footer](./components/common/Footer/Footer.md)
+
+men også sider og deres styles
+[Products](./pages/products/ProductsPage.md)
+[Reviews](./pages/reviews/ReviewsPage.md)
+[Subscribers](./pages/subscribers/SubscribersPage.md)
+
+Der er flere og alle er ikke listet her - Tag dem efterhånden som du følger med i videoerne.
 
 ## Kildefiler.
 
@@ -37,4 +46,6 @@ F.eks.
 
 1. Intro til Legekrogen Server Project, men generelt for alle server projects.
 2. Intro til Tutorial React Klienten.
-3. Opstart, Menu, Routing og Produkter.
+3. Opstart, Produkter.
+4. Mere Produkter, Reviews og Subscribers og en hook.
+4. Routing og Backoffice.
