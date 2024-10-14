@@ -6,7 +6,9 @@ Live Server     : https://legekrogen-v2.webmcdm.dk
 
 # Functional Prototyping Legekrogen
 
-Dette er en tutorial i at arbejde med et at vores server projekter. Du kan med fordel starte med at hoppe over og se [Video Tutorials](https://vimeo.com/user/59963758/folder/22283699?isPrivate=false) og det vil ikke være dumt at se de første par stykker og først derefter selv begynde at kode og se dem igen.
+Link til videos : https://legekrogen-v2.webmcdm.dk/www/
+
+Dette er en tutorial i at arbejde med et at vores server projekter. Du kan med fordel starte med at hoppe over og se [Video Tutorials](https://legekrogen-v2.webmcdm.dk/www/) og det vil ikke være dumt at se de første par stykker og først derefter selv begynde at kode og se dem igen.
 
 Derudover anbefaler jeg at du læser dette dokument igennem også. - det er hurtigt overstået :)
 
@@ -40,21 +42,44 @@ men også sider og deres styles
 
 Der er flere og alle er ikke listet her - Tag dem efterhånden som du følger med i videoerne.
 
+## Forskellige Tutorials
+
+Du kan starte med Basket videoerne da det hele gerne skulle være uafhængig af hinanden 
+men **du bør se video 1 hvis du ikke** har serveren installeret.
+
+### Server installation
+Video 1
+
+### CRUD Create, Read, Update og Delete tutorial
+Video 2 til 11.
+
+### Basket / Tilføj og fjern fra kurven og præsentér produkter
+Video 12 til 15.
+
 ## Kildefiler.
 
 I mappen "sources", i dette repsositorie, ligger der kildefiler.
 
 Start med at hente `mcd_web_legekrogen_server.zip` og `mcd_legekrogen_tutorial_crud_client_starter.zip`.
 
+## Server (bemærk serveren kan blive opdateret så hent gerne den nyeste her.)
+
+Alle zip filerne ligger i dette repo under "sources" mappen.
+
 **Server**
 `mcd_web_legekrogen_server.zip`
 
-**Starter klient template**
+## CRUD 
+**Products Starter klient template**
 `mcd_legekrogen_tutorial_crud_client_starter.zip`
 
 **Products implementeret, klient template**
 `mcd_legekrogen_tutorial_crud_client_products.zip`
 
-## Video Tutorials.
+## Basket
+**Basket Starter klient template**
+`mcd_legekrogen_tutorial_basket_client_starter.zip`
 
-[Video Tutorials](https://vimeo.com/user/59963758/folder/22283699?isPrivate=false)
+**Basket implementeret, klient template (uden egen hook)**
+`mcd_legekrogen_tutorial_basket_client_solution.zip`
+

@@ -10,25 +10,44 @@ import { useEffect, useState } from 'react';
 import styles from './products.module.css'
 import PrintJson from '../../common/PrintJSON/PrintJson';
 import useTinyFetch from '../../../hooks/tinyFetch.hook';
+import { Link } from 'react-router-dom';
+import { icons } from '../../../services/icons';
 
 const Product = ({product}) => {
 
     return <div className={styles.product}>
-    
-        <PrintJson jsonobj={product} headline={product.title}></PrintJson>
+        
+        <img src={product.image} />
+        <div className={styles.content}>
+            
+            <h3>{product.title}</h3>
+            <p>{product.description}</p>
+            <p>{product.price} kr.</p>
+        </div>
         
     </div>
 
 }
 
-const ProductList = ({products}) => {
+const DebugProduct = ({product}) => {
+
+    return <div className={styles.debugProduct}>
+    
+        <PrintJson jsonobj={product} headline={product.title}></PrintJson>
+        
+        <Link to={`/products/${product._id}`}>Product Page</Link>
+    </div>
+
+}
+
+const ProductList = ({products, debugMode}) => {
 
     return (
         <div className={styles.list}>
-
+            
             {products.map( (product) => {
 
-                return <Product key={product._id} product={product}></Product>
+                return debugMode ? <DebugProduct key={product._id} product={product}></DebugProduct> : <Product key={product._id} product={product}></Product>
 
             } )}
 
@@ -40,6 +59,7 @@ const ProductList = ({products}) => {
 const Products = () => {
 
     const [products, setProducts] = useState([]);
+    const [debugMode, setDebugMode] = useState(true);
     const {data, fetchData} = useTinyFetch()
 
     useEffect( () => {
@@ -57,10 +77,9 @@ const Products = () => {
     return (
 
         <div className={styles.products}>
+            <div className={styles.debugBtn} onClick={ () => setDebugMode(!debugMode)}>{icons["FaWrench"]} TOGGLE {debugMode ? 'PRODUCT' : 'DEBUG'} MODE</div>
 
-
-           <ProductList products={products}></ProductList>
-
+           <ProductList products={products} debugMode={debugMode}></ProductList>
 
         </div>
 
@@ -73,12 +92,31 @@ export default Products;
 ```css
 .products {
 
-    padding : 20px;
+    padding: 20px;
 
-    .product {
+    .debugProduct {
         padding : 20px;
         border : 2px dashed var(--mc-color-green); 
         width:100%;
+    }
+
+    .product {
+        background-color: rgb(148, 120, 168);
+        width:100%;
+        border-radius: 16px;
+
+        .content {
+            padding: 20px;
+
+            color : #fff;
+            border-radius: 0 0 16px 16px;
+        }
+        img {
+            width : 100%;
+            border-radius: 16px 16px 0 0;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
     }
 
     .list {
@@ -87,7 +125,71 @@ export default Products;
         flex-wrap: wrap;
         gap : 20px;
 
+        > div {
+            width: 100%;
+        }
+       
     }
 
+    .debugBtn {
+        background-color: black;
+        width : 100%;
+        color:#fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+    
+    @media(min-width:768px) {
+       .list {
+
+            > div {
+                width: calc(50% - 10px);
+            }
+
+       }
+
+    }
+
+    @media(min-width:1024px) {
+        .list {
+ 
+             > div {
+                 width: calc(25% - 15px);
+             }
+ 
+        }
+ 
+     }
+
+     @media(min-width:1224px) {
+        .list {
+ 
+             > div {
+                 width: calc(20% - 16px);
+             }
+ 
+        }
+ 
+     }
+}
+
+.debugBtn {
+    background-color: black;
+    width : 300px;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
 }
 ```
